@@ -21,15 +21,17 @@
 
 - (void)internalInit
 {
-//    self.backgroundColor = [UIColor clearColor];
     CGFloat headRadius = 12;
-    UIView *headView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, headRadius+45)];
-//    headView.backgroundColor = [UIColor clearColor];
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:headView.frame byRoundingCorners:UIRectCornerTopLeft|UIRectCornerTopRight cornerRadii:CGSizeMake(headRadius, headRadius)];
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerTopLeft|UIRectCornerTopRight cornerRadii:CGSizeMake(headRadius, headRadius)];
     shapeLayer.path = path.CGPath;
-    shapeLayer.backgroundColor = [UIColor whiteColor].CGColor;
-    [headView.layer addSublayer:shapeLayer];
+    shapeLayer.fillColor = [UIColor whiteColor].CGColor;
+    [self.layer addSublayer:shapeLayer];
+//    self.layer.masksToBounds = YES;
+    UIView *headView = [[UIView alloc]initWithFrame:CGRectMake(0, headRadius, self.frame.size.width, 45)];
+//    headView.backgroundColor = [UIColor clearColor];
+    
+//    [headView.layer addSublayer:shapeLayer];
     [self addSubview:headView];
 }
 
