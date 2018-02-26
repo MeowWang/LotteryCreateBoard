@@ -15,6 +15,7 @@
 		DD707DDD2043EC37004777A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD707DDC2043EC37004777A1 /* main.m */; };
 		DD707DE72043EC37004777A1 /* LotteryCreateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD707DE62043EC37004777A1 /* LotteryCreateTests.m */; };
 		DD707DF22043EC37004777A1 /* LotteryCreateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD707DF12043EC37004777A1 /* LotteryCreateUITests.m */; };
+		DD707E012043ED1E004777A1 /* LotteryCreateBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = DD707E002043ED1E004777A1 /* LotteryCreateBoard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		DD707DED2043EC37004777A1 /* LotteryCreateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LotteryCreateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD707DF12043EC37004777A1 /* LotteryCreateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LotteryCreateUITests.m; sourceTree = "<group>"; };
 		DD707DF32043EC37004777A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD707DFF2043ED1E004777A1 /* LotteryCreateBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LotteryCreateBoard.h; sourceTree = "<group>"; };
+		DD707E002043ED1E004777A1 /* LotteryCreateBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LotteryCreateBoard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				DD707DCE2043EC37004777A1 /* AppDelegate.m */,
 				DD707DD02043EC37004777A1 /* ViewController.h */,
 				DD707DD12043EC37004777A1 /* ViewController.m */,
+				DD707DFF2043ED1E004777A1 /* LotteryCreateBoard.h */,
+				DD707E002043ED1E004777A1 /* LotteryCreateBoard.m */,
 				DD707DD32043EC37004777A1 /* Main.storyboard */,
 				DD707DD62043EC37004777A1 /* Assets.xcassets */,
 				DD707DD82043EC37004777A1 /* LaunchScreen.storyboard */,
@@ -267,6 +272,7 @@
 			files = (
 				DD707DD22043EC37004777A1 /* ViewController.m in Sources */,
 				DD707DDD2043EC37004777A1 /* main.m in Sources */,
+				DD707E012043ED1E004777A1 /* LotteryCreateBoard.m in Sources */,
 				DD707DCF2043EC37004777A1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
