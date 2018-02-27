@@ -7,6 +7,7 @@
 //
 
 #import "LotteryCreateBoard.h"
+#import "UIView+frame.h"
 
 @implementation LotteryCreateBoard
 
@@ -27,12 +28,34 @@
     shapeLayer.path = path.CGPath;
     shapeLayer.fillColor = [UIColor whiteColor].CGColor;
     [self.layer addSublayer:shapeLayer];
-//    self.layer.masksToBounds = YES;
-    UIView *headView = [[UIView alloc]initWithFrame:CGRectMake(0, headRadius, self.frame.size.width, 45)];
-//    headView.backgroundColor = [UIColor clearColor];
     
-//    [headView.layer addSublayer:shapeLayer];
+    //head
+    UIView *headView = [[UIView alloc]initWithFrame:CGRectMake(0, headRadius, self.frame.size.width, 45)];
     [self addSubview:headView];
+    UILabel *titleLabel = [UILabel new];
+    titleLabel.font = [UIFont systemFontOfSize:16];
+    titleLabel.text = @"设置条件";
+    [titleLabel sizeToFit];
+    titleLabel.center = CGPointMake(self.width/2, titleLabel.height/2+6);
+    [headView addSubview:titleLabel];
+    CGFloat close_width = 18;
+    UIButton *closeBtn = [[UIButton alloc]initWithFrame:CGRectMake(self.width-close_width-10, titleLabel.y, close_width, close_width)];
+    [closeBtn setImage:[UIImage imageNamed:@"black_close.png"] forState:UIControlStateNormal];
+    closeBtn.contentMode = UIViewContentModeScaleToFill;
+    [closeBtn addTarget:self action:@selector(onClickClose) forControlEvents:UIControlEventTouchUpInside];
+    closeBtn.backgroundColor = [UIColor blueColor];
+    [headView addSubview:closeBtn];
+    
+    UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, headView.height+headRadius, self.width, self.height-headView.height-headRadius)];
+    contentView.backgroundColor = [UIColor colorWithRed:247.0/255.0 green:247.0/255.0 blue:247.0/255.0 alpha:1.0];
+    [self addSubview:contentView];
+    
+    
+}
+
+- (void)onClickClose
+{
+    
 }
 
 @end

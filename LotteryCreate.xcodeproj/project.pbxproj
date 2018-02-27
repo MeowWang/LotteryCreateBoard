@@ -16,6 +16,8 @@
 		DD707DE72043EC37004777A1 /* LotteryCreateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD707DE62043EC37004777A1 /* LotteryCreateTests.m */; };
 		DD707DF22043EC37004777A1 /* LotteryCreateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD707DF12043EC37004777A1 /* LotteryCreateUITests.m */; };
 		DD707E012043ED1E004777A1 /* LotteryCreateBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = DD707E002043ED1E004777A1 /* LotteryCreateBoard.m */; };
+		DD707E3E20453B97004777A1 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = DD707E3D20453B97004777A1 /* UIView+frame.m */; };
+		DD707E40204542F9004777A1 /* black_close.png in Resources */ = {isa = PBXBuildFile; fileRef = DD707E3F204542F9004777A1 /* black_close.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		DD707DF32043EC37004777A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD707DFF2043ED1E004777A1 /* LotteryCreateBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LotteryCreateBoard.h; sourceTree = "<group>"; };
 		DD707E002043ED1E004777A1 /* LotteryCreateBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LotteryCreateBoard.m; sourceTree = "<group>"; };
+		DD707E3C20453B97004777A1 /* UIView+frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		DD707E3D20453B97004777A1 /* UIView+frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		DD707E3F204542F9004777A1 /* black_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_close.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,7 @@
 		DD707DC12043EC37004777A1 = {
 			isa = PBXGroup;
 			children = (
+				DD707E3F204542F9004777A1 /* black_close.png */,
 				DD707DCC2043EC37004777A1 /* LotteryCreate */,
 				DD707DE52043EC37004777A1 /* LotteryCreateTests */,
 				DD707DF02043EC37004777A1 /* LotteryCreateUITests */,
@@ -108,6 +114,8 @@
 				DD707DCE2043EC37004777A1 /* AppDelegate.m */,
 				DD707DD02043EC37004777A1 /* ViewController.h */,
 				DD707DD12043EC37004777A1 /* ViewController.m */,
+				DD707E3C20453B97004777A1 /* UIView+frame.h */,
+				DD707E3D20453B97004777A1 /* UIView+frame.m */,
 				DD707DFF2043ED1E004777A1 /* LotteryCreateBoard.h */,
 				DD707E002043ED1E004777A1 /* LotteryCreateBoard.m */,
 				DD707DD32043EC37004777A1 /* Main.storyboard */,
@@ -243,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD707E40204542F9004777A1 /* black_close.png in Resources */,
 				DD707DDA2043EC37004777A1 /* LaunchScreen.storyboard in Resources */,
 				DD707DD72043EC37004777A1 /* Assets.xcassets in Resources */,
 				DD707DD52043EC37004777A1 /* Main.storyboard in Resources */,
@@ -273,6 +282,7 @@
 				DD707DD22043EC37004777A1 /* ViewController.m in Sources */,
 				DD707DDD2043EC37004777A1 /* main.m in Sources */,
 				DD707E012043ED1E004777A1 /* LotteryCreateBoard.m in Sources */,
+				DD707E3E20453B97004777A1 /* UIView+frame.m in Sources */,
 				DD707DCF2043EC37004777A1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
