@@ -8,8 +8,9 @@
 
 #import "ViewController.h"
 #import "LotteryCreateBoard.h"
+#import "UIView+frame.h"
 
-@interface ViewController ()
+@interface ViewController () <LotteryCreateBoardProtocol>
 @property (nonatomic, strong)LotteryCreateBoard *createBoard;
 @end
 
@@ -28,11 +29,15 @@
 
 - (void)openCreateBoard
 {
-    if (!self.createBoard) {
-        self.createBoard = [[LotteryCreateBoard alloc]initWithHeight:557];
+    self.createBoard = [[LotteryCreateBoard alloc]initWithHeight:557];
+    self.createBoard.delegate = self;
 //        [self.view addSubview:self.createBoard];
-        [self popupView:self.createBoard];
-    }
+    [self popupView:self.createBoard];
+}
+
+- (void)onBoardCloseBtnClicked:(LotteryCreateBoard *)board
+{
+    [self dropupView:board];
 }
 
 - (void)popupView:(UIView*)view
@@ -41,6 +46,13 @@
     view.frame = CGRectMake(view.frame.origin.x, [UIScreen mainScreen].bounds.size.height, view.frame.size.width, view.frame.size.height);
     [UIView animateWithDuration:0.4 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         view.frame = CGRectMake(view.frame.origin.x, [UIScreen mainScreen].bounds.size.height-view.frame.size.height, view.frame.size.width, view.frame.size.height);
+    } completion:nil];
+}
+
+- (void)dropupView:(UIView*)view
+{
+    [UIView animateWithDuration:0.4 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        view.frame = CGRectMake(view.x, [UIScreen mainScreen].bounds.size.height, view.width, view.height);
     } completion:nil];
 }
 @end

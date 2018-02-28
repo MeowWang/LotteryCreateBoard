@@ -18,6 +18,7 @@
 		DD707E012043ED1E004777A1 /* LotteryCreateBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = DD707E002043ED1E004777A1 /* LotteryCreateBoard.m */; };
 		DD707E3E20453B97004777A1 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = DD707E3D20453B97004777A1 /* UIView+frame.m */; };
 		DD707E40204542F9004777A1 /* black_close.png in Resources */ = {isa = PBXBuildFile; fileRef = DD707E3F204542F9004777A1 /* black_close.png */; };
+		DDB086BE20469CCA00E335B4 /* AwardNameSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB086BD20469CCA00E335B4 /* AwardNameSettingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		DD707E3C20453B97004777A1 /* UIView+frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
 		DD707E3D20453B97004777A1 /* UIView+frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 		DD707E3F204542F9004777A1 /* black_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_close.png; sourceTree = "<group>"; };
+		DDB086BC20469CCA00E335B4 /* AwardNameSettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwardNameSettingView.h; sourceTree = "<group>"; };
+		DDB086BD20469CCA00E335B4 /* AwardNameSettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwardNameSettingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				DD707DD82043EC37004777A1 /* LaunchScreen.storyboard */,
 				DD707DDB2043EC37004777A1 /* Info.plist */,
 				DD707DDC2043EC37004777A1 /* main.m */,
+				DDB086BC20469CCA00E335B4 /* AwardNameSettingView.h */,
+				DDB086BD20469CCA00E335B4 /* AwardNameSettingView.m */,
 			);
 			path = LotteryCreate;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB086BE20469CCA00E335B4 /* AwardNameSettingView.m in Sources */,
 				DD707DD22043EC37004777A1 /* ViewController.m in Sources */,
 				DD707DDD2043EC37004777A1 /* main.m in Sources */,
 				DD707E012043ED1E004777A1 /* LotteryCreateBoard.m in Sources */,
