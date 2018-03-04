@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AwardNameSettingView : UIView
+- (instancetype)initWithFrame:(CGRect)frame withTitle:(NSString*)title withHint:(NSString*)hintStr;
 
 @end

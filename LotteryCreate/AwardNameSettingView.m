@@ -11,7 +11,7 @@
 
 @interface AwardNameSettingView()
 @property (nonatomic, strong)UILabel *titleLabel;
-@property (nonatomic, strong)UITextView *nameTextView;
+@property (nonatomic, strong)UITextField *nameTextView;
 @end
 
 @implementation AwardNameSettingView
@@ -35,9 +35,10 @@
     self.titleLabel.frame = CGRectMake(15, 15, self.titleLabel.width, self.titleLabel.height);
     [self addSubview:self.titleLabel];
     
-    self.nameTextView = [[UITextView alloc]initWithFrame:CGRectMake(15, 41, self.width-30, 22)];
+    self.nameTextView = [[UITextField alloc]initWithFrame:CGRectMake(15, 41, self.width-30, 22)];
     self.nameTextView.font = [UIFont systemFontOfSize:16];
-    
+    self.nameTextView.placeholder = hintStr;
+    [self addSubview:self.nameTextView];
 }
 
 @end

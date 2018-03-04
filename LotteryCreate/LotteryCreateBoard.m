@@ -8,6 +8,7 @@
 
 #import "LotteryCreateBoard.h"
 #import "UIView+frame.h"
+#import "AwardNameSettingView.h"
 
 @interface LotteryCreateBoard()
 @property (nonatomic, strong) UIView *awardContainer;
@@ -15,6 +16,7 @@
 @property (nonatomic, strong) UIButton *confirmButton;
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UISegmentedControl *awardSegment;
+@property (nonatomic, strong) AwardNameSettingView *awardSettingView;
 @end
 
 @implementation LotteryCreateBoard
@@ -57,7 +59,7 @@
     self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, headView.height+headRadius, self.width, self.height-headView.height-headRadius)];
     self.scrollView.backgroundColor = [UIColor colorWithRed:247.0/255.0 green:247.0/255.0 blue:247.0/255.0 alpha:1.0];
     [self addSubview:self.scrollView];
-    
+    [self initAwardSetting];
 }
 
 - (void)initAwardSetting
@@ -71,7 +73,8 @@
     [self.awardSegment setSelectedSegmentIndex:0];
     [self.awardContainer addSubview:self.awardSegment];
     
-    
+    self.awardSettingView = [[AwardNameSettingView alloc]initWithFrame:CGRectMake(0, self.awardSegment.y+self.awardSegment.height+12, self.width, 77) withTitle:@"奖品名称" withHint:@"iPhoneX"];
+    [self.awardContainer addSubview:self.awardSettingView];
 }
 
 - (void)onClickClose
